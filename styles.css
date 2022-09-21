@@ -9,7 +9,7 @@ body {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #222;
-  background: #f7f5f0;
+  background: #f2f3f4;
 }
 /* Link Styles */
 
@@ -57,14 +57,32 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/thenorthremembers2.jpeg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
-}
-header {
   line-height: 1.5;
 }
+
+#header-achievements{
+  text-align: center;
+  background: url('images/aryaachievements1.webp') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+  line-height: 1.5;
+  
+}
+
+#header-family{
+  text-align: center;
+  background: url('images/starkfamily1.webp') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+  line-height: 1.5;
+}
+
 header .profile-image {
   margin-top: 50px;
   width: 150px;
@@ -72,9 +90,11 @@ header .profile-image {
   border-radius: 50%;
   border: 3px solid white;
   transition: all .5s;
+  
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.2);
+  transform: rotate(360deg);
 }
 .tag {
   background-color: #efefef;
@@ -86,7 +106,7 @@ header .profile-image:hover {
 } 
 .location {
   background-color: #222;
-  color: yellow;
+  color: white;
 }
 .card {
   margin: 30px;
@@ -99,7 +119,159 @@ header .profile-image:hover {
   transition: all .5s;
 }
 .card:hover {
-  border-color: #ff99ff;
+  border-color: #880808;
+}
+
+
+.familycard{
+  display: inline-flex;
+}
+
+#ned{
+  margin: 30px;
+  padding: 20px 40px 40px;
+  width: 200px;
+  height: 200px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 6px solid #ccc;
+  border-radius: 6px;
+  display: inline-block;
+  border-color: #a55233;
+}
+#ned:hover{
+  
+  background: url('images/ned_trial.webp') center ;
+  transition: 1000ms; 
+  color: white;
+}
+
+#cat{
+  margin: 30px;
+  padding: 20px 40px 40px;
+  width: 200px;
+  height: 200px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 6px solid #ccc;
+  border-radius: 6px;
+  border-color: #f3bc77;
+  display: inline-block;
+}
+#cat:hover{
+  background: url('images/cat_trial.webp') center ;
+  transition: 1000ms; 
+  color: white;
+}
+
+#san{
+  margin: 30px;
+  padding: 20px 40px 40px;
+  width: 200px;
+  height: 200px;
+  text-align: left;
+  background: #f3bc77;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+#san:hover{
+  background: url('images/QueenSansa.webp') center ;
+  transition: 1000ms; 
+  color: white;
+}
+
+#Rob{
+  margin: 30px;
+  padding: 20px 40px 40px;
+  width: 200px;
+  height: 200px;
+  text-align: left;
+  background: #a55233;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+  display: inline-block;
+}
+
+#Rob:hover{
+  background: url('images/robb.webp') center ;
+  transition: 1000ms; 
+  color: white;
+}
+
+#Bran{
+  margin: 30px;
+  padding: 20px 40px 40px;
+  width: 200px;
+  height: 200px;
+  text-align: left;
+  background: #f3bc77;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+#Bran:hover{
+  background: url('images/bran.jpeg') center ;
+  transition: 1000ms; 
+  color: white;
+}
+
+#Rick{
+  margin: 30px;
+  padding: 20px 40px 40px;
+  width: 200px;
+  height: 200px;
+  text-align: left;
+  background: #a55233;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+#Rick:hover{
+  background: url('images/Rickon_stark.webp') center ;
+  transition: 1000ms; 
+  color: white;
+}
+
+#Jon{
+  margin: 30px;
+  padding: 20px 40px 40px;
+  width: 200px;
+  height: 200px;
+  text-align: left;
+  background: #f3bc77;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+#Jon:hover{
+  background: url('images/jon.webp') center ;
+  transition: 1000ms; 
+  color: white;
+}
+
+.articlecard{
+  
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 1500px;
+  margin: auto;
+  margin-bottom: 20px;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+
+.articlecard:hover{
+  border-color: #36454F;
 }
 
 ul.skills {
@@ -110,14 +282,14 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
+  background: #800020;
   color: white;
   padding: 5px 10px;
   margin: 2px;
 }
 
 .skills li:nth-child(odd) {
-  background: #0399ff;
+  background: black;
 }
 
 footer {
@@ -205,3 +377,23 @@ a.social:hover {
 
 }
 
+/* heading styles */
+
+.headings {
+    color: #880808;
+    
+}
+
+.articleh3{
+  text-align: left;
+  padding-left: 25px;
+  padding-left: 25px;
+  color: #880808
+}
+/*paragraph styles*/
+
+.achievementarticles{
+  text-align: left;
+  padding: 10px 25px 0 25px;
+  
+}
